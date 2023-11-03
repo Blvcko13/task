@@ -1,0 +1,185 @@
+header {
+  padding: 40px 70px;
+  display: flex;
+  align-items: center;
+  .comp{
+    &_logo {
+    width: 50px;
+    height: 50px;
+    }
+    &_name {
+      margin-left: 5px;
+      font-weight: 700;
+      font-size: 23px;
+    }
+  }
+}
+
+.first {
+  display: flex;
+  margin: 10px 70px;
+  &__img {
+    margin: 45px;
+    width: 35%;
+  }
+  &__content {
+    width: 55%;
+    h1 {
+      margin-top: 5px;
+      margin-bottom: 35px;
+      font-weight: 700;
+    }
+    .feed-form {
+      display: flex;
+      &__item {
+        position: relative;
+        &:first-child {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          margin-left: 10px;
+        }
+        input {
+          height: 45px;
+          width: 100%;
+          padding-left: 8px;
+          border-radius: 10px;
+          border: 1px solid grey;
+          &#theme {
+            &:focus {
+              border: 2px solid cyan;
+              outline: none;
+            }
+            &:focus + label {
+              color: cyan;
+            }
+          }
+        }
+        .sign{
+          position: absolute;
+          top: 12px;
+          right: 3px;
+          border: none;
+          background: none;
+        }
+        .x-sign {
+          position: relative;
+          width: 10px;
+          height: 10px;
+          border: 1px solid black;
+          border-radius: 8px;
+          padding: 9px;
+          .line {
+              position: absolute;
+              width: 8px;
+              left: 5px;
+              top: 8px;
+              margin: 0 auto;
+              border-top: 2px solid black;
+              transform: rotate(90deg);
+              &:first-child {
+                  transform: rotate(45deg);
+              }
+              &:nth-child(2) {
+                  transform: rotate(-45deg);
+              }
+          }
+        }
+        select {
+          height: 45px;
+          width: 150px;
+          border-radius: 10px;
+          padding-left: 8px;
+          &:focus + label {
+            color: cyan;
+          }
+          &:focus {
+            border: 2px solid cyan;
+            outline: none;
+          }
+        }
+      }
+    }
+    .themes {
+      margin-top: 10px;
+      &__options {
+        padding: 5px 9px;
+        margin: 5px;
+        margin-left: 0;
+        border-radius: 40px;
+        border: none;
+      }
+      &__more {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        margin-top: 0;
+      }
+      .plus-sign {
+        margin-right: 5px;
+        position: relative;
+        width: 10px;
+        height: 10px;
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            border-top: 2px solid cyan;
+            transform: rotate(90deg);
+            &:first-child {
+                transform: rotate(0deg);
+            }
+        }
+      }
+    }
+  }
+  .textarea {
+    margin: 10px;
+    margin-left: 0;
+    position: relative;
+    #aim {
+      width: 100%;
+      height: 200px;
+      padding: 7px;
+      resize: none;
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid grey;
+      &:focus + label {
+        color: cyan;
+      }
+      &:focus {
+        border: 2px solid cyan;
+        outline: none;
+      }
+    }
+  }
+  .label {
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    background: white;
+    padding: 0 5px;
+  }
+  .buttons {
+    &__back {
+      height: 50px;
+      padding: 5px 30px;
+      background: white;
+      outline: none;
+      border: 2px solid cyan;
+      border-radius: 10px;
+      &:hover {
+        background: cyan;
+        color: white;
+      }
+    }
+    &__next {
+      margin-left: 10px;
+      height: 50px;
+      border-radius: 10px;
+      padding: 5px 30px;
+    }
+  }
+}
